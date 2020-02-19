@@ -24,7 +24,16 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  const date = new Date();
+  const hours = date.getHours();
+
+  if (hours < 12 && hours > 0) {
+    greeting.innerText = `Good Morning ${text}`;
+  } else if (hours > 12 && hours < 18) {
+    greeting.innerText = `Good afternoon ${text}`;
+  } else {
+    greeting.innerText = `Good Night ${text}`;
+  }
 }
 
 function loadName() {
