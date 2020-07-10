@@ -23,28 +23,37 @@ h1 {
   color: white;
   transition: color 0.5s ease-in-out;
   font-size: 150px;
-
   padding: 0;
 }
 #forms__display {
   position: absolute;
-  top: 520px;
-  left: 35%;
+  top: 550px;
+  left: 38%;
+  color: white;
+  border: none;
 }
 
-.js-form form input[type="text"] {
+.js-form form {
   border: none;
-
-  font-size: 54px;
-
+  font-size: 80px;
   background: inherit;
 }
 
-.js-toDoForm input[type="text"] {
+.askname {
+  font-size: 40px;
+  background-color: inherit;
+  border: none;
+}
+
+.askname:focus {
+  outline: none;
+  cursor: text;
+}
+
+.js-toDoForm input {
   border: none;
   width: 600px;
   font-size: 40px;
-  border-bottom: 2px solid white;
 
   background: inherit;
 }
@@ -75,7 +84,7 @@ input::placeholder {
 h4 {
   position: absolute;
   top: 450px;
-  left: 36%;
+  left: 38%;
   font-size: 60px;
 }
 
